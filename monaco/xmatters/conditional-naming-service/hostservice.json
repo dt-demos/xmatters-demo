@@ -1,0 +1,31 @@
+{
+ "displayName": "{{.name}}",
+ "enabled": false,
+ "metadata": {
+  "clusterVersion": "1.211.111.20210222-093946",
+  "configurationVersions": [
+   0
+  ]
+ },
+ "nameFormat": "{Host:DetectedName}-{ProcessGroup:Environment:service}",
+ "rules": [
+  {
+   "comparisonInfo": {
+    "caseSensitive": null,
+    "negate": false,
+    "operator": "EXISTS",
+    "type": "STRING",
+    "value": null
+   },
+   "key": {
+    "attribute": "PROCESS_GROUP_CUSTOM_METADATA",
+    "dynamicKey": {
+     "key": "project",
+     "source": "ENVIRONMENT"
+    },
+    "type": "PROCESS_CUSTOM_METADATA_KEY"
+   }
+  }
+ ],
+ "type": "SERVICE"
+}

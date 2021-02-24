@@ -1,0 +1,6 @@
+config:
+- xmatters: xmatters.json
+xmatters:
+- name: xMatters
+- mzId: "/xmatters/management-zone/production.id"
+

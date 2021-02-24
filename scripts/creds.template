@@ -1,0 +1,8 @@
+{
+    "DYNATRACE_BASE_URL":"YOUR TENANT - example https://xxxxx.live.dynatrace.com",
+    "DYNATRACE_API_TOKEN":"YOUR API TOKEN",
+    "MONACO_XMATTERS_PROBLEM_TRIGGER_URL":"https://xxxx.xmatters.com/api/integration/1/functions/xxxxx/triggers",
+    "MONACO_KEPTN_PROBLEM_KEPTN_TOKEN":"xxxxx",
+    "MONACO_KEPTN_PROBLEM_WEBHOOK_URL":"https://xxxxxxx/api/v1/event",
+    "MONACO_DASHBOARD_OWNER":"VALID USER EMAIL WITH DT"
+}

@@ -1,0 +1,4 @@
+config:
+- hostservice: hostservice.json
+hostservice:
+- name: host-service

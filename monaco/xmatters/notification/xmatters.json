@@ -1,0 +1,10 @@
+{
+ "acceptAnyCertificate": false,
+ "active": true,
+ "alertingProfile": "{{ .alertingProfileId }}",
+ "headers": [],
+ "name": "{{.name}}",
+ "payload": "{\n    \"impactedEntities\": {ImpactedEntities},\n    \"impactedEntity\": \"{ImpactedEntity}\",\n    \"pid\": \"{PID}\",\n    \"problemDetailsHTML\": \"{ProblemDetailsHTML}\",\n    \"problemDetailsJSON\": {ProblemDetailsJSON},\n    \"problemDetailsMarkdown\": \"{ProblemDetailsMarkdown}\",\n    \"problemDetailsText\": \"{ProblemDetailsText}\",\n    \"problemId\": \"{ProblemID}\",\n    \"problemImpact\": \"{ProblemImpact}\",\n    \"problemSeverity\": \"{ProblemSeverity}\",\n    \"problemTitle\": \"{ProblemTitle}\",\n    \"problemURL\": \"{ProblemURL}\",\n    \"state\": \"{State}\",\n    \"tags\": \"{Tags}\"\n}",
+ "type": "XMATTERS",
+ "url": "{{ .Env.MONACO_XMATTERS_PROBLEM_TRIGGER_URL }}"
+}

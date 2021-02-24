@@ -1,0 +1,9 @@
+config:
+- xmatters: xmatters.json
+- keptn: keptn.json
+keptn:
+- name: Keptn Problem Notification
+- alertingProfileId: "/xmatters/alerting-profile/xmatters.id"
+xmatters:
+- name: xMatters Problem Notification
+- alertingProfileId: "/xmatters/alerting-profile/xmatters.id"

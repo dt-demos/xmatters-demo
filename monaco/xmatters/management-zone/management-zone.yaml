@@ -1,0 +1,10 @@
+config:
+- staging: staging.json
+- dt-orders: dt-orders.json
+- production: production.json
+dt-orders:
+- name: dt-orders
+production:
+- name: production
+staging:
+- name: staging

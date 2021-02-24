@@ -1,0 +1,38 @@
+{
+ "metadata": {
+  "clusterVersion": "1.211.111.20210222-093946",
+  "configurationVersions": [
+   7
+  ]
+ },
+ "name": "{{.name}}",
+ "rules": [
+  {
+   "conditions": [
+    {
+     "comparisonInfo": {
+      "caseSensitive": null,
+      "negate": false,
+      "operator": "EXISTS",
+      "type": "STRING",
+      "value": null
+     },
+     "key": {
+      "attribute": "PROCESS_GROUP_CUSTOM_METADATA",
+      "dynamicKey": {
+       "key": "keptn_stage",
+       "source": "ENVIRONMENT"
+      },
+      "type": "PROCESS_CUSTOM_METADATA_KEY"
+     }
+    }
+   ],
+   "enabled": true,
+   "propagationTypes": [
+    "SERVICE_TO_PROCESS_GROUP_LIKE"
+   ],
+   "type": "SERVICE",
+   "valueFormat": "{ProcessGroup:Environment:keptn_stage}"
+  }
+ ]
+}

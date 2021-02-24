@@ -1,0 +1,58 @@
+{
+ "dimensionalRules": [],
+ "metadata": {
+  "clusterVersion": "1.211.111.20210222-093946",
+  "configurationVersions": [
+   0
+  ]
+ },
+ "name": "{{.name}}",
+ "rules": [
+  {
+   "conditions": [
+    {
+     "comparisonInfo": {
+      "caseSensitive": true,
+      "negate": false,
+      "operator": "EQUALS",
+      "type": "STRING",
+      "value": "staging"
+     },
+     "key": {
+      "attribute": "PROCESS_GROUP_CUSTOM_METADATA",
+      "dynamicKey": {
+       "key": "stage",
+       "source": "ENVIRONMENT"
+      },
+      "type": "PROCESS_CUSTOM_METADATA_KEY"
+     }
+    }
+   ],
+   "enabled": true,
+   "propagationTypes": [],
+   "type": "SERVICE"
+  },
+  {
+   "conditions": [
+    {
+     "comparisonInfo": {
+      "negate": false,
+      "operator": "EQUALS",
+      "type": "TAG",
+      "value": {
+       "context": "CONTEXTLESS",
+       "key": "stage",
+       "value": "staging"
+      }
+     },
+     "key": {
+      "attribute": "HOST_TAGS"
+     }
+    }
+   ],
+   "enabled": true,
+   "propagationTypes": [],
+   "type": "HOST"
+  }
+ ]
+}

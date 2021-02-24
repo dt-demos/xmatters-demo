@@ -1,0 +1,4 @@
+---
+spec_version: '0.1.0'
+dtCreds: dynatrace-demo
+dashboard: query

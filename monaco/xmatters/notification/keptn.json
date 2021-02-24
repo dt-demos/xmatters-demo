@@ -1,0 +1,20 @@
+{
+ "acceptAnyCertificate": true,
+ "active": true,
+ "alertingProfile": "{{ .alertingProfileId }}",
+ "headers": [
+  {
+   "name": "x-token",
+   "value": "{{ .Env.MONACO_KEPTN_PROBLEM_KEPTN_TOKEN }}"
+  },
+  {
+   "name": "Content-Type",
+   "value": "application/cloudevents+json"
+  }
+ ],
+ "name": "{{.name}}",
+ "notifyEventMergesEnabled": false,
+ "payload": "{\n    \"specversion\":\"0.2\",\n    \"type\":\"sh.keptn.events.problem\",\n    \"shkeptncontext\":\"{PID}\",\n    \"source\":\"dynatrace\",\n    \"id\":\"{PID}\",\n    \"time\":\"\",\n    \"contenttype\":\"application/json\",\n    \"data\": {\n        \"State\":\"{State}\",\n        \"ProblemID\":\"{ProblemID}\",\n        \"PID\":\"{PID}\",\n        \"ProblemTitle\":\"{ProblemTitle}\",\n        \"ProblemURL\":\"{ProblemURL}\",\n        \"ProblemDetails\":{ProblemDetailsJSON},\n        \"Tags\":\"{Tags}\",\n        \"ImpactedEntities\":{ImpactedEntities},\n        \"ImpactedEntity\":\"{ImpactedEntity}\"\n    }\n}\n",
+ "type": "WEBHOOK",
+ "url": "{{ .Env.MONACO_KEPTN_PROBLEM_WEBHOOK_URL }}"
+}

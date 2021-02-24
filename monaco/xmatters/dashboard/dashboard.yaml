@@ -1,0 +1,10 @@
+config:
+- KQGprojectdt-ordersservicefrontendstagestaging: KQGprojectdt-ordersservicefrontendstagestaging.json
+- DTORDERSDigitalDeliveryOperationsDashboard: DTORDERSDigitalDeliveryOperationsDashboard.json
+- KQGprojectdt-ordersservicefrontendstageproduction: KQGprojectdt-ordersservicefrontendstageproduction.json
+DTORDERSDigitalDeliveryOperationsDashboard:
+- name: 'DT ORDERS: Digital Delivery & Operations Dashboard'
+KQGprojectdt-ordersservicefrontendstageproduction:
+- name: KQG;project=dt-orders;service=frontend;stage=production
+KQGprojectdt-ordersservicefrontendstagestaging:
+- name: KQG;project=dt-orders;service=frontend;stage=staging

@@ -1,0 +1,5 @@
+stages:
+  - name: "staging"
+    test_strategy: "external"
+  - name: "production"
+    test_strategy: "external"

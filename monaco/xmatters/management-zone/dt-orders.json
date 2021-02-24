@@ -1,0 +1,36 @@
+{
+ "dimensionalRules": [],
+ "metadata": {
+  "clusterVersion": "1.211.111.20210222-093946",
+  "configurationVersions": [
+   0
+  ]
+ },
+ "name": "{{.name}}",
+ "rules": [
+  {
+   "conditions": [
+    {
+     "comparisonInfo": {
+      "caseSensitive": true,
+      "negate": false,
+      "operator": "EQUALS",
+      "type": "STRING",
+      "value": "dt-orders"
+     },
+     "key": {
+      "attribute": "PROCESS_GROUP_CUSTOM_METADATA",
+      "dynamicKey": {
+       "key": "project",
+       "source": "ENVIRONMENT"
+      },
+      "type": "PROCESS_CUSTOM_METADATA_KEY"
+     }
+    }
+   ],
+   "enabled": true,
+   "propagationTypes": [],
+   "type": "SERVICE"
+  }
+ ]
+}

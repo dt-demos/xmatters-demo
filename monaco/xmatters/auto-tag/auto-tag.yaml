@@ -1,0 +1,25 @@
+config:
+- project: project.json
+- keptndeployment: keptndeployment.json
+- keptnproject: keptnproject.json
+- owner: owner.json
+- stage: stage.json
+- keptnservice: keptnservice.json
+- service: service.json
+- keptnstage: keptnstage.json
+keptndeployment:
+- name: keptn_deployment
+keptnproject:
+- name: keptn_project
+keptnservice:
+- name: keptn_service
+keptnstage:
+- name: keptn_stage
+owner:
+- name: owner
+project:
+- name: project
+service:
+- name: service
+stage:
+- name: stage

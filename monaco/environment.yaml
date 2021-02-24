@@ -1,0 +1,4 @@
+xmatters:
+    - name: "xmatters"
+    - env-url: "{{ .Env.DYNATRACE_BASE_URL }}"
+    - env-token-name: "DYNATRACE_API_TOKEN"
