@@ -10,7 +10,6 @@ These are the steps to setup the sample application on the VM.  There are two do
 
     ```
     # general utilities
-
     sudo yum update -y
     sudo yum install git -y
     sudo yum install jq -y
@@ -19,8 +18,7 @@ These are the steps to setup the sample application on the VM.  There are two do
     # Reference:* https://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html
 
     sudo yum update -y
-    sudo amazon-linux-extras install docker
-    sudo yum install docker -y
+    sudo amazon-linux-extras install docker -y
     sudo service docker start
     sudo usermod -a -G docker ec2-user
     sudo docker info
@@ -42,6 +40,7 @@ These are the steps to setup the sample application on the VM.  There are two do
 2. Adjust YAML filename (staging or production) for the this command that will start the app 
 
     ```
+    cd xmatters-demo/app
     docker-compose -f docker-compose-staging.yaml up -d
     ```
 

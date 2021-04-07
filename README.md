@@ -2,7 +2,8 @@
 
 This repo has the script used to setup the [xMatters Demo Dayz](https://www.xmatters.com/demo-dayz) event where we showed how a great customer experience requires more than development of a useful new feature — it’s imperative that features be available 24/7 without interruption. 
 
-![app](./images/demo.gif)
+[![Demo Dayz session on YouTube](http://img.youtube.com/vi/eHDO4ss8B8A/0.jpg)]
+(https://www.youtube.com/watch?v=eHDO4ss8B8A&t=1118As)
 
 See this [Overview](https://github.com/dt-orders/overview) for details on the sample application.
 
